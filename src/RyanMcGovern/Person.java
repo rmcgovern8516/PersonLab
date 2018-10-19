@@ -1,4 +1,4 @@
 package RyanMcGovern;
 
-public abstract class Person {
+public abstract class Perso {
 }
