@@ -1,12 +1,22 @@
 package RyanMcGovern;
 
-public abstract class Person {
-    private String type;
-    public Person(String type){
-        this.type = type;
+public class Person {
+    private String firstName;
+    private String familyName;
+    public Person(String firstName, String familyName){
+        this.firstName = firstName;
+        this.familyName = familyName;
     }
-    public abstract String getFirstName();
-    public abstract String getFamilyName();
-    public abstract String toString();
-    public abstract boolean equals();
+    public String getFirstName(){
+        return firstName;
+    }
+    public String getFamilyName(){
+        return familyName;
+    }
+    public boolean equals(Person p){
+        if(p.getFamilyName().equals(p.getFirstName())){
+            return true;
+        }
+        return false;
+    }
 }

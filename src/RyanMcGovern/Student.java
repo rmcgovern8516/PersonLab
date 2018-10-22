@@ -3,27 +3,31 @@ package RyanMcGovern;
 import java.security.PublicKey;
 
 public class Student extends Person{
-    private String firstName;
-    private String familyName;
+    private String favTeach;
+    private String school;
     private double GPA;
-    public Student (String firstName, String familyName, double GPA){
-        super("Student");
-        this.firstName = firstName;
-        this.familyName = familyName;
+    public Student (String favTeach, String school, double GPA){
+        super();
+        super()
+        this.favTeach = favTeach;
+        this.school = school;
         this.GPA = GPA;
     }
     @Override
-    public String getFirstName(){
-        return firstName;
+    public String getfavTeach(){
+
+        return favTeach;
     }
     @Override
-    public String getFamilyName(){
-        return familyName;
+    public String getschool(){
+
+        return school;
     }
-    @Override
-    public String toString(){
-        return familyName +","+firstName;
-    }
+    //@Override
+    //public String toString(){
+
+        //return familyName +","+firstName;
+    //}
     @Override
     public boolean equals(){
         if(getFamilyName().equals(getFirstName())){
