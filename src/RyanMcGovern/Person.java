@@ -1,8 +1,8 @@
 package RyanMcGovern;
 
 public class Person {
-    private String firstName;
-    private String familyName;
+    public String firstName;
+    public String familyName;
     public Person(String firstName, String familyName){
         this.firstName = firstName;
         this.familyName = familyName;
