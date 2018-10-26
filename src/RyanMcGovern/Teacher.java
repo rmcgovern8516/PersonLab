@@ -16,6 +16,5 @@ public class Teacher extends Person{
     public void setSubject(String subject){this.subject = subject;}
     public void setTitle(String title){this.title = title;}
 
-    //public String toString {return title+familyName;}
 
 }

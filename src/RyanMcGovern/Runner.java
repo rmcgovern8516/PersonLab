@@ -5,14 +5,21 @@ import jdk.internal.dynalink.beans.StaticClass;
 public class Runner {
 
     public static Iterable<? extends Student> Students;
-    public static Teacher t1;
+    public static Iterable<? extends Teacher> Teachers;
 
     public static void Students(){
         Student s1 = new Student("Bob", "Bob", "Mr.Levin", "BTHS", 3.2);
         Student s2 = new Student("Sam", "Robertson", "Mr.Levin", "BTHS",2.7);
-        Teacher t1= new Teacher("Nathan", "Fowell", "Compsci", "Mr");
         Student[] Students = {s1, s2};
     }
+
+    public static void Teachers(){
+        Teacher t1= new Teacher("Nathan", "Fowell", "Compsci", "Mr.");
+        Teacher t2 = new Teacher("Eddie","Wilson","Math","Mr.");
+        Teacher[] teachers = {t1,t2};
+    }
+
+
     public static void main(String[] args) {
         // write your code here
         Runner.Students();
@@ -22,6 +29,12 @@ public class Runner {
             System.out.println("My family name is "+p.getFamilyName());
             System.out.println("My GPA name is "+p.getGPA());
             System.out.println("Is my family name the same as my first name? "+p.equals());
+        }
+        Runner.Teachers();
+        for(Teacher t: Teachers){
+            System.out.println(t);
+            //System.out.println("This teacher is "+t.getTitle()
+
         }
     }
 }
