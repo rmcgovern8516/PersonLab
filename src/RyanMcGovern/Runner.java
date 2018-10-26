@@ -37,4 +37,13 @@ public class Runner {
 
         }
     }
+
+    public static void randomStudent(){
+        String firstNames[]= {"Abe", "Babe", "Cabe", "Dabe", "Fabe", "Gabe", "Habe", "Labe"}
+        String lastNames[]= {"Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey", "Black"};
+        int a= (int) (Math.random() * 8);
+        int b= (int) (Math.random() * 8);
+        double g= Math.random() * 4;
+        Student stud= new Student(firstNames[a], lastNames[b], g);
+    }
 }

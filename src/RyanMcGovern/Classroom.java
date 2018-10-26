@@ -1,18 +1,15 @@
 package RyanMcGovern;
-import RyanMcGovern.Student;
-import RyanMcGovern.Person;
-import RyanMcGovern.Teacher;
-import RyanMcGovern.Runner;
 
 import static RyanMcGovern.Runner.Students;
 
+
 public class Classroom {
-    private String[] students[];
+    private Student[] students;
     private Teacher teacher;
 
-    public Classroom(String[] Students, Teacher) {
-        this.students[]= Students;
-        this.teacher = Teacher;
+    public Classroom(Student[] Students, Teacher t1) { ;
+        this.students= Students;
+        this.teacher = t1;
     }
 
     public double classAverage(){
@@ -26,7 +23,7 @@ public class Classroom {
 
     public String getSubject(){
         String sub= "";
-        sub= Teacher.getSubject();
+        sub= (String) Teacher.getSubject();
         return sub;
     }
 

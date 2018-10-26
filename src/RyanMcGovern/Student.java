@@ -31,7 +31,7 @@ public class Student extends Person{
         }
         return false;
     }
-    public double getGPA(){
+    public  double getGPA(){
         return GPA;
     }
 }

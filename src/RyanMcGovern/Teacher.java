@@ -10,11 +10,11 @@ public class Teacher extends Person{
         this.title = title;
     }
 
-    public String getSubject(String subject){return this.subject;}
-    public String getTitle(String title){return this.title;}
+    public  String getSubject(){return this.subject;}
+    public String getTitle(){return this.title;}
 
-    public void setSubject(String subject){this.subject = subject;}
-    public void setTitle(String title){this.title = title;}
+    public void setSubject(){this.subject = subject;}
+    public void setTitle(){this.title = title;}
 
 
 }
