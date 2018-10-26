@@ -6,21 +6,18 @@ public class Student extends Person{
     private String favTeach;
     private String school;
     private double GPA;
-    public Student (String favTeach, String school, double GPA){
-        super();
-        super()
+    public Student (String firstName, String familyName, String favTeach, String school, double GPA){
+        super(firstName, familyName);
         this.favTeach = favTeach;
         this.school = school;
         this.GPA = GPA;
     }
-    @Override
-    public String getfavTeach(){
 
+    public String getfavTeach(){
         return favTeach;
     }
-    @Override
-    public String getschool(){
 
+    public String getschool(){
         return school;
     }
     //@Override
@@ -28,7 +25,6 @@ public class Student extends Person{
 
         //return familyName +","+firstName;
     //}
-    @Override
     public boolean equals(){
         if(getFamilyName().equals(getFirstName())){
             return true;
