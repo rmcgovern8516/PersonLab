@@ -14,7 +14,7 @@ public class Person {
         return familyName;
     }
     public boolean equals(Person p){
-        if(p.getFamilyName().equals(p.getFirstName())){
+        if((p.getFamilyName().equals(getFamilyName()))&& (p.getFirstName().equals(getFirstName()))){
             return true;
         }
         return false;

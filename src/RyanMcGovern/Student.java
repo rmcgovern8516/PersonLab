@@ -12,26 +12,17 @@ public class Student extends Person{
         this.school = school;
         this.GPA = GPA;
     }
-
-    public String getfavTeach(){
+    public String getFavTeach(){
         return favTeach;
     }
-
-    public String getschool(){
+    public String getSchool(){
         return school;
     }
-    //@Override
-    //public String toString(){
 
-        //return familyName +","+firstName;
-    //}
-    public boolean equals(){
-        if(getFamilyName().equals(getFirstName())){
-            return true;
-        }
-        return false;
+    public String toString(){
+        return familyName +","+firstName;
     }
-    public  double getGPA(){
+    public double getGPA(){
         return GPA;
     }
 }
